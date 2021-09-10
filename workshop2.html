@@ -27,17 +27,13 @@
 
 			// Tehtävä 3:
 
-			/*if (navigator.appCodeName == "Mozilla") {
+			/* if (navigator.appCodeName == "Mozilla") {
 					window.location.href = "http://www.mozilla.org/";
 			} else {
 					window.location.href = "http://www.microsoft.com/"
-			}*/
+			} */
 
 			// Tehtävä 4: 
-
-			/* Create a simple web page, 
-			where JavaScript confirm-dialog will pop out asking if the user is a student or not. If the user clicks OK write "Welcome student" to the page. 
-			If the user clicks cancel, write on the page: "Sorry, this page is for students only". HINT: Confirm(); return true if the user click OK and false if cancel was clicked.*/
 			
 			if (confirm("Press a button!")) {
 				document.write("<h1>Welcome student!</h1>");
@@ -45,8 +41,14 @@
 				alert("Sorry, this page is for students only!");
 			}
 	
-			
+			// Tehtävä 5:			
 
+			var images =[
+			"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg", 
+			"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg", 
+			"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"];
+			var number = Math.round (Math.random() * 2);
+			document.write("<img src =" + images[number]);
 
 		</script>
 </head>
