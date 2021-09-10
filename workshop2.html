@@ -27,12 +27,23 @@
 
 			// Tehtävä 3:
 
-			if (navigator.appCodeName == "Mozilla") {
+			/*if (navigator.appCodeName == "Mozilla") {
 					window.location.href = "http://www.mozilla.org/";
 			} else {
 					window.location.href = "http://www.microsoft.com/"
-			}
+			}*/
 
+			// Tehtävä 4: 
+
+			/* Create a simple web page, 
+			where JavaScript confirm-dialog will pop out asking if the user is a student or not. If the user clicks OK write "Welcome student" to the page. 
+			If the user clicks cancel, write on the page: "Sorry, this page is for students only". HINT: Confirm(); return true if the user click OK and false if cancel was clicked.*/
+			
+			if (confirm("Press a button!")) {
+				document.write("<h1>Welcome student!</h1>");
+			} else {
+				alert("Sorry, this page is for students only!");
+			}
 	
 			
 
