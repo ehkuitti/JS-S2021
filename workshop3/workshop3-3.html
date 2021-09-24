@@ -30,13 +30,28 @@ function myFunction() {
   
 }
 
+// tehtävä 6
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  console.log("Latitude: " + position.coords.latitude + 
+  ", Longitude: " + position.coords.longitude);
+}
 
 
 </script>
 
 <h2>Exercise 5</h2>
 
-<div id="coordinates" onmouseover="myFunction();">
+<div id="coordinates" onmousemove="myFunction();">
 <h2 id="coord"></h2>
 </div>
 <p>Add onMouseMove -event to the DIV-element above. When you move mouse over the DIV (rectangle) the program should output the coordinates of your pointer. Try first 
@@ -46,7 +61,8 @@ mouse event using event.clientX and event.clientY variables. Study the event obj
 document.getElementById("coordinates").innerHTML to achieve this.
 
 <H2>Exercise 6</h2>
-<button>Get location</button> 
+<button onclick="getLocation();">Get location</button> 
+<p id="demo"</p>
 <button>Show location</button> 
 
 <li>The first button should check <a href="https://www.w3schools.com/html/html5_geolocation.asp">Geolocation</a> of the user, and output it to the console and to the 
