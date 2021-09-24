@@ -25,7 +25,7 @@ function myFunction() {
   var y = event.clientY;
   var coords = "X: " + x + " Y: " + y;
 
-  document.getElementById("coordinates").innerHTML = coords;
+  document.getElementById("coord").innerHTML = coords;
 
   
 }
@@ -36,7 +36,7 @@ function myFunction() {
 
 <h2>Exercise 5</h2>
 
-<div id="coordinates" onmouseover="myFunction();"></div>
+<div id="coordinates" onmouseover="myFunction();">
 <h2 id="coord"></h2>
 </div>
 <p>Add onMouseMove -event to the DIV-element above. When you move mouse over the DIV (rectangle) the program should output the coordinates of your pointer. Try first 
