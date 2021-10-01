@@ -32,7 +32,7 @@ img {
 <p>
   <button onclick="first_button();">Button 1</button>
   <button onclick="second_button();">Button 2</button>
-  <button onclick="">Button 3</button>
+  <button onclick="third_button();">Button 3</button>
 </p>
 
 <ul>
@@ -175,6 +175,42 @@ Salary:
     header_2.style.fontSize = "5em";
     header_2.style.fontFamily = "Impact, Charcoal, sans-serif";
     header_2.style.fontWeight = "bold";
+  }
+
+/*  function third_button() {
+      var p4 = document.getElementsByTagName("p")[3];
+      // luodaan itse elementti <p> tagi
+      var node = document.createElement("p");
+      // luodaan itse teksti
+      var text = document.createTextNode("Hoi, maailma! Mitä kuuluu?");
+      // liimataan node (eli p-elementti) text (tekstiin)
+      var p4 = document.getElementByTagName("p")[3];
+      node.appendChild(text);
+      // liimataan node + text p4:een.
+      p4.appendChild(node);
+  }*/
+
+
+  // third button
+  function third_button() {
+    var p4 = document.getElementsByTagName("p")[3];
+    // luodaan itse elementti <p> tagi
+    var node = document.createElement("p");
+    // luodaan itse teksti
+    var text = document.createTextNode("Hoi, maailma, mitä kuuluu?");
+    // liimataan node (eli p elementti) text (tekstiin)
+    node.appendChild(text);
+    // liimataan node + text p4een.
+    p4.appendChild(node);
+    document.body.style.backgroundColor = "pink";
+
+    var lorem = document.getElementsByTagName("em")[1];
+    lorem.style.fontSize = "4em";
+    
+    var img = document.createElement("img");
+    img.src = "https://st2.depositphotos.com/2100659/6768/v/950/depositphotos_67686065-stock-illustration-lorem-ipsum-abstract-vector-logo.jpg";
+    lorem.appendChild(img);
+
   }
 
 
