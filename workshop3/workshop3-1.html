@@ -17,12 +17,59 @@ table, tr, td{
 
 </style>
 <script>
-// tehtävä 1 
+// tehtävä 1
+
+var pvm = new Date()
 function myFunction() {
-  alert("You clicked me!");
+  alert("You clicked me on " + pvm);
 
 }
 
+//tehtävä 2
+
+function tokaNappi() {
+    
+  var taulukko = `
+      <h2>HTML table</h2>
+
+        <table>
+        <table border = "4">
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>Tauno</td>
+            <td>Muurari</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>Maarit</td>
+            <td>Muurari</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>Miisa</td>
+            <td>Sähkäri</td>
+            <td>1050</td>
+        </tr>
+        <tr>
+            <td>Eelis</td>
+            <td>Futari</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>Noora</td>
+            <td>Biologi</td>
+            <td>1800</td>
+        </tr>
+        
+      </table>
+      <br>
+
+`;
+}
 
 
 
@@ -39,7 +86,7 @@ good idea to save the lines of code you write during the exercises for later use
 <p>&nbsp;Below you will see three buttons. Edit the source code and add an onClick-events to these buttons.</p>
 <p>
   <button onclick="myFunction();">Button 1</button>
-  <button>Button 2</button>
+  <button onclick="tokaNappi();">Button 2</button>
   <button>Button 3</button>
 </p>
 
