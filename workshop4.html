@@ -31,7 +31,7 @@ img {
 <p>&nbsp;Below you will see three buttons. Edit the source code and add an onClick-events to these buttons. Use Developer Console to find the </p>
 <p>
   <button onclick="first_button();">Button 1</button>
-  <button onclick="">Button 2</button>
+  <button onclick="second_button();">Button 2</button>
   <button onclick="">Button 3</button>
 </p>
 
@@ -166,6 +166,15 @@ Salary:
     var header = document.getElementsByTagName("h1")[0];
     header.innerHTML = "Modified heading!";
     console.log(header);
+  }
+
+  function second_button() {
+    var header_2 = document.getElementsByTagName("h2")[1];
+    header_2.style.backgroundColor = "black";
+    header_2.style.color = "yellow";
+    header_2.style.fontSize = "5em";
+    header_2.style.fontFamily = "Impact, Charcoal, sans-serif";
+    header_2.style.fontWeight = "bold";
   }
 
 
