@@ -21,11 +21,8 @@ img {
 }
 
 </style>
-<script>
 
-</script>
-
-<h1 id = "hoo1">Workshop 4: DOM Scripting</h1>
+<h1>Workshop 4: DOM Scripting</h1>
 <hr />
 <p>In this exercise we will practice the art of DOM Scripting with JavaScript. Use the lecture-material as a reference guide side by side these exercises. It might also be a good idea to save the lines of code you write during the exercises for later use. </p>
 
@@ -33,7 +30,7 @@ img {
 <h2>Exercise 1: Basic  DOM Manipulation</h2>
 <p>&nbsp;Below you will see three buttons. Edit the source code and add an onClick-events to these buttons. Use Developer Console to find the </p>
 <p>
-  <button type="button" onclick='document.getElementById("hoo1").innerHTML = "Modified heading!"'>Button 1</button>
+  <button onclick="first_button();">Button 1</button>
   <button onclick="">Button 2</button>
   <button onclick="">Button 3</button>
 </p>
@@ -163,3 +160,13 @@ Salary:
 </html>
 
 
+<script>
+
+  function first_button() {
+    var header = document.getElementsByTagName("h1")[0];
+    header.innerHTML = "Modified heading!";
+    console.log(header);
+  }
+
+
+</script>
