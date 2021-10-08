@@ -20,59 +20,38 @@ table, tr, td{
 // tehtävä 1
 
 var pvm = new Date()
-function myFunction() {
+function ekaNappi() {
   alert("You clicked me on " + pvm);
 
 }
 
 //tehtävä 2
 
-function tokaNappi() {
-    
-  var taulukko = `
-      <h2>HTML table</h2>
 
-        <table>
-        <table border = "4">
-        <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Salary</th>
-        </tr>
-        <tr>
-            <td>Tauno</td>
-            <td>Muurari</td>
-            <td>1000</td>
-        </tr>
-        <tr>
-            <td>Maarit</td>
-            <td>Muurari</td>
-            <td>1000</td>
-        </tr>
-        <tr>
-            <td>Miisa</td>
-            <td>Sähkäri</td>
-            <td>1050</td>
-        </tr>
-        <tr>
-            <td>Eelis</td>
-            <td>Futari</td>
-            <td>5000</td>
-        </tr>
-        <tr>
-            <td>Noora</td>
-            <td>Biologi</td>
-            <td>1800</td>
-        </tr>
-        
-      </table>
-      <br>
 
-`;
+//tehtävä 3
+
+function kolmasNappi(){
+
+var taulukko = ["Nyssa P. Skinner", "593-4241 Lacus, St.","Cape Verde", 
+	       "Camilla F. Strickland","391-2150 Ac Rd.","Andorra",
+	       "Reagan U. Andrews", "P.O. Box 472, 2271 Mauris Ave","Faroe Islands",
+	       "Kelsey D. Clark", "P.O. Box 866, 7793 Aliquet Ave","Bulgaria"
+];
+
+document.write('<table border="1"><tr>');
+
+for (var i=0; i < persons.length; i++){
+// Change the line after three data items
+if (i % 3 == 0) {
+document.write("</tr><tr>");
+} // end if
+// output the data
+document.write("<td>"+persons[i]+"</td>" );
+
+} // end for
+document.write("</table>");
 }
-
-
-
 
 </script>
 
@@ -85,9 +64,9 @@ good idea to save the lines of code you write during the exercises for later use
 <h2>Exercise 1</h2>
 <p>&nbsp;Below you will see three buttons. Edit the source code and add an onClick-events to these buttons.</p>
 <p>
-  <button onclick="myFunction();">Button 1</button>
+  <button onclick="ekaNappi();">Button 1</button>
   <button onclick="tokaNappi();">Button 2</button>
-  <button>Button 3</button>
+  <button onclic="kolmasNappi();">Button 3</button>
 </p>
 
 <ul>
