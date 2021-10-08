@@ -28,8 +28,8 @@ function ekaNappi() {
 //tehtävä 2
 
 function tokaNappi() {
-    var table = 
-        <table id="example" class="display" cellspacing="5" border = "1" width="100%">
+    var table = //Tästä puuttui tämä merkki, vaadittu jotta voi käyttää HTML-koodia JS-muuttujassa 
+    `<table id="example" class="display" cellspacing="5" border = "1" width="100%">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -67,18 +67,16 @@ function tokaNappi() {
                 </tr>
     
             </tbody>
-        </table>
+        </table>` //Tästä puuttui tämä merkki, vaadittu jotta voi käyttää HTML-koodia JS-muuttujassa
         ;
     
 
     document.write(table);
   }
 
-//tehtävä 3
+function showTable(){
 
-function kolmasNappi(){
-
-var taulukko = ["Nyssa P. Skinner", "593-4241 Lacus, St.","Cape Verde", 
+var persons = ["Nyssa P. Skinner", "593-4241 Lacus, St.","Cape Verde", 
 	       "Camilla F. Strickland","391-2150 Ac Rd.","Andorra",
 	       "Reagan U. Andrews", "P.O. Box 472, 2271 Mauris Ave","Faroe Islands",
 	       "Kelsey D. Clark", "P.O. Box 866, 7793 Aliquet Ave","Bulgaria"
@@ -111,7 +109,7 @@ good idea to save the lines of code you write during the exercises for later use
 <p>
   <button onclick="ekaNappi()">Button 1</button>
   <button onclick="tokaNappi()">Button 2</button>
-  <button onclick="kolmasNappi()">Button 3</button>
+  <button onclick="showTable()">Button 3</button>
 </p>
 
 <ul>
