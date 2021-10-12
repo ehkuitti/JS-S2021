@@ -17,6 +17,9 @@ table, tr, td{
 </style>
 
 <script>
+
+var counter = 0; //EX3:a varten
+
 // tehtävä 1
 
 function ekaNappi() {
@@ -94,6 +97,46 @@ document.write("<td>"+persons[i]+"</td>" );
 
 } // end for
 document.write("</table>");
+}
+/*
+function h2_print (x) {
+  document.getElementById("H2EX2").onmouseenter(console.log("You stepped over my mouse!"));
+}
+
+function h2_leave (x) {
+  document.getElementById("H2EX2").onmouseleave(console.log("You stepped over my mouse!"));
+}*/
+
+function txt_function (x) {
+  x.style.background = "yellow";
+  x.innerHTML = "Please fill in the form with proper data.";
+
+  /*
+  document.getElementById("textarea");
+  let nappain_alas = document.getElementById("textarea").onkeydown();
+
+  if (nappain_alas) {
+    for (let i = 0; i < nappain_alas; i++) {
+      x.getElementById("textarea").innerHTML = "Painoit näppäimiä " + i + " kertaa";
+    } 
+  }
+*/ 
+}
+
+function count () {
+  counter++;
+  document.getElementById('counter').innerHTML = counter;
+}
+
+function validate () {
+
+  var textbox = document.getElementById('textdata');
+
+  if (textbox.value == ''){
+    alert("Field is empty!");
+    return false;
+  }
+
 }
 
 </script>
@@ -185,7 +228,7 @@ var persons = ["Nyssa P. Skinner", "593-4241 Lacus, St.","Cape Verde",
 </xmp>
 </ul>
 
-<h2>Exercise 2</h2>
+<h2 onmouseover="console.log('Stepped over my a mouse!');" onmouseleave="console.log('Bye bye mouse!');">Exercise 2</h2>
 
 <ul>
   <li>Add an&nbsp;onMouseOver event on the&nbsp;Heading "Exercise 2" of this page.&nbsp;It should&nbsp;fire when the users mouse is moved
@@ -203,8 +246,10 @@ modifying the background color of the box as well. &nbsp;
   <li>When the form button is clicked, check if the textarea is empty. Notify the user with appropriate message. HINT: You can access the Textarea using the following 
 command:   <i>document.getElementById("textdata").value</i>. We will study the forms deeper in Workshops 4 and 5.</li>
 </ul>
-<form>
-  <textarea id="textdata"></textarea><br>
+<form onsubmit="return validate(this);">
+  <textarea onkeydown="count();" id="textdata" onfocus="txt_function(this)"></textarea>
+  <br>
+  <h3 id="counter"></h3>
     <button>Send me</button>
 </form>
 <h2>Exercise 4</h2>
