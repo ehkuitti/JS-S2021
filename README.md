@@ -1,6 +1,1 @@
-# JS-S2021
-
-Tämä repo on forkkaus Laurean suorittamani JavaScript-kurssin kurssimateriaalireposta. Tehtävien ohjeet olivat alkuperäisen repon tiedostoissa, joten forkkasin
-sen ja aloin palauttamaan tehtäviä tähän repoon. Tehtäväpalautukset/vastaukset löytyvät kurssin palautuskäytänteen mukaan samoista tiedostoista kuin niiden
-teko-ohjeet (`workshop#x.html`). Tämän lisäksi reposta löytyy omia ylimääräisiä harjoituksiani (`esimerkkejä`-kansio) kuin myös luennolla esiteltyjä koodidemoja
-(`tuntidemot`-kansio). 
+This repo is a fork from the course material repo of a JavaScript course. I took this course at Laurea University of Applied Sciences. Assignment submissions can be found within the instruction files, as per the course submission policy (`workshop#x.html`). In addition, this repo contains some additional exercises for practicing JS (the ``examples'' folder), as well as code demos of the lectures (`class demos' folder).
